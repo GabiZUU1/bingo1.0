@@ -47,8 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AmericanBingo.cs" />
-    <Compile Include="Card.cs" />
-    <Compile Include="CardCell.cs" />
+    <Compile Include="Cards.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CardCell.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>

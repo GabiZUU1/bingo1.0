@@ -25,6 +25,31 @@ namespace Bingo
             }
         }
         private GameType _gameType { get; set; } = GameType.American;
+
+        public Game()
+        {
+            InitializeComponent();
+        }
+
+        public Game(GameType gameType)
+        {
+            _gameType = gameType;
+
+            InitializeComponent();
+        }
+
+        public Game(GameType gameType, List<Player> players)
+        {
+            _gameType = gameType;
+            Players = players;
+
+            InitializeComponent();
+        }
+
+        private void InitializeComponent()
+        {
+
+        }
     }
 
     public enum GameType
