@@ -9,8 +9,23 @@ namespace Bingo
 {
     public class Card : Panel
     {
-        CardCell[,] CardCells { get; set; }
-        bool Completed { get; set; }
+        private bool _completed;
+        public bool Completed
+        {
+            get => _completed;
+            set
+            {
+                _completed = value;
+                this.Enabled = !value;
+            }
+        }
+
+        private Type _cardType;
+        public Type CardType
+        {
+            get => _cardType;
+            set;
+        }
     }
 
     public class AmercianCard : Card

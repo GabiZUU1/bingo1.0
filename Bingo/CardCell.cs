@@ -37,7 +37,6 @@ namespace Bingo
         private void InitializeComponent()
         {
             this.Size = new Size(this.Parent.Width / 5, this.Parent.Height / 5);
-
         }
     }
 }
