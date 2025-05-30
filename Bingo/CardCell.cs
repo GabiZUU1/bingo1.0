@@ -16,17 +16,27 @@ namespace Bingo
 
     public class AmericanCardCell : Label, ICardCell
     {
-        public Card CParent { get; set; } = null;
         public string Content { get; set; } = string.Empty;
         public bool Marked { get; set; } = false;
 
         public AmericanCardCell(Card parent)
         {
-            CParent = parent;
+            this.Parent = parent;
+
+            InitializeComponent();
+        }
+
+        public AmericanCardCell(Card parent, string content)
+        {
+            this.Parent = parent;
+            Content = content;
+
+            InitializeComponent();
         }
 
         private void InitializeComponent()
         {
+            this.Size = new Size(this.Parent.Width / 5, this.Parent.Height / 5);
 
         }
     }
