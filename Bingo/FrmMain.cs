@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Bingo
 {
-    public partial class FrmLogin: Form
+    public partial class FrmMain: Form
     {
-        public FrmLogin()
+        public FrmMain()
         {
             InitializeComponent();
         }

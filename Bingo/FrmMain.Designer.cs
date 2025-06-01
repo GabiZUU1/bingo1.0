@@ -1,6 +1,6 @@
 ﻿namespace Bingo
 {
-    partial class FrmLogin
+    partial class FrmMain
     {
         /// <summary>
         /// Required designer variable.

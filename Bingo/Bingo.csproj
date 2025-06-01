@@ -46,25 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AmericanBingo.cs" />
-    <Compile Include="Cards.cs">
+    <Compile Include="Card.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CardCell.cs">
+    <Compile Include="CardCells.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="FrmLogin.cs">
+    <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogin.Designer.cs">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Game.cs" />
-    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmLogin.resx">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
