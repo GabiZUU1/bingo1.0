@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Gabi\\Desktop\\c#\\Bingo1.0\\",
+  "WorkspaceRootPath": "C:\\Users\\Gabi\\Desktop\\c#\\bingo1.0\\bingo1.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E3DE6D59-14EA-4BDA-AF6C-C37F5B481FA8}|Bingo\\Bingo.csproj|c:\\users\\gabi\\desktop\\c#\\bingo1.0\\bingo\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E3DE6D59-14EA-4BDA-AF6C-C37F5B481FA8}|Bingo\\Bingo.csproj|c:\\users\\gabi\\desktop\\c#\\bingo1.0\\bingo1.0\\bingo\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3DE6D59-14EA-4BDA-AF6C-C37F5B481FA8}|Bingo\\Bingo.csproj|solutionrelative:bingo\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3DE6D59-14EA-4BDA-AF6C-C37F5B481FA8}|Bingo\\Bingo.csproj|c:\\users\\gabi\\desktop\\c#\\bingo1.0\\bingo\\cardcells.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E3DE6D59-14EA-4BDA-AF6C-C37F5B481FA8}|Bingo\\Bingo.csproj|C:\\Users\\Gabi\\Desktop\\c#\\bingo1.0\\bingo1.0\\bingo\\cardcells.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3DE6D59-14EA-4BDA-AF6C-C37F5B481FA8}|Bingo\\Bingo.csproj|solutionrelative:bingo\\cardcells.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3DE6D59-14EA-4BDA-AF6C-C37F5B481FA8}|Bingo\\Bingo.csproj|c:\\users\\gabi\\desktop\\c#\\bingo1.0\\bingo\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E3DE6D59-14EA-4BDA-AF6C-C37F5B481FA8}|Bingo\\Bingo.csproj|C:\\Users\\Gabi\\Desktop\\c#\\bingo1.0\\bingo1.0\\bingo\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3DE6D59-14EA-4BDA-AF6C-C37F5B481FA8}|Bingo\\Bingo.csproj|solutionrelative:bingo\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3DE6D59-14EA-4BDA-AF6C-C37F5B481FA8}|Bingo\\Bingo.csproj|c:\\users\\gabi\\desktop\\c#\\bingo1.0\\bingo\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E3DE6D59-14EA-4BDA-AF6C-C37F5B481FA8}|Bingo\\Bingo.csproj|C:\\Users\\Gabi\\Desktop\\c#\\bingo1.0\\bingo1.0\\bingo\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E3DE6D59-14EA-4BDA-AF6C-C37F5B481FA8}|Bingo\\Bingo.csproj|solutionrelative:bingo\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -26,43 +26,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 208,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Card.cs",
-              "DocumentMoniker": "C:\\Users\\Gabi\\Desktop\\c#\\Bingo1.0\\Bingo\\Card.cs",
-              "RelativeDocumentMoniker": "Bingo\\Card.cs",
-              "ToolTip": "C:\\Users\\Gabi\\Desktop\\c#\\Bingo1.0\\Bingo\\Card.cs",
-              "RelativeToolTip": "Bingo\\Card.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T13:03:42.624Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "CardCells.cs",
-              "DocumentMoniker": "C:\\Users\\Gabi\\Desktop\\c#\\Bingo1.0\\Bingo\\CardCells.cs",
+              "DocumentMoniker": "C:\\Users\\Gabi\\Desktop\\c#\\bingo1.0\\bingo1.0\\Bingo\\CardCells.cs",
               "RelativeDocumentMoniker": "Bingo\\CardCells.cs",
-              "ToolTip": "C:\\Users\\Gabi\\Desktop\\c#\\Bingo1.0\\Bingo\\CardCells.cs",
+              "ToolTip": "C:\\Users\\Gabi\\Desktop\\c#\\bingo1.0\\bingo1.0\\Bingo\\CardCells.cs",
               "RelativeToolTip": "Bingo\\CardCells.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T13:01:54.797Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\Gabi\\Desktop\\c#\\bingo1.0\\bingo1.0\\Bingo\\Card.cs",
+              "RelativeDocumentMoniker": "Bingo\\Card.cs",
+              "ToolTip": "C:\\Users\\Gabi\\Desktop\\c#\\bingo1.0\\bingo1.0\\Bingo\\Card.cs",
+              "RelativeToolTip": "Bingo\\Card.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:03:42.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "FrmMain.cs",
-              "DocumentMoniker": "C:\\Users\\Gabi\\Desktop\\c#\\Bingo1.0\\Bingo\\FrmMain.cs",
+              "DocumentMoniker": "C:\\Users\\Gabi\\Desktop\\c#\\bingo1.0\\bingo1.0\\Bingo\\FrmMain.cs",
               "RelativeDocumentMoniker": "Bingo\\FrmMain.cs",
-              "ToolTip": "C:\\Users\\Gabi\\Desktop\\c#\\Bingo1.0\\Bingo\\FrmMain.cs",
+              "ToolTip": "C:\\Users\\Gabi\\Desktop\\c#\\bingo1.0\\bingo1.0\\Bingo\\FrmMain.cs",
               "RelativeToolTip": "Bingo\\FrmMain.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-25T08:46:30.982Z",
               "EditorCaption": ""
@@ -71,9 +83,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "FrmMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Gabi\\Desktop\\c#\\Bingo1.0\\Bingo\\FrmMain.cs",
+              "DocumentMoniker": "C:\\Users\\Gabi\\Desktop\\c#\\bingo1.0\\bingo1.0\\Bingo\\FrmMain.cs",
               "RelativeDocumentMoniker": "Bingo\\FrmMain.cs",
-              "ToolTip": "C:\\Users\\Gabi\\Desktop\\c#\\Bingo1.0\\Bingo\\FrmMain.cs [Design]",
+              "ToolTip": "C:\\Users\\Gabi\\Desktop\\c#\\bingo1.0\\bingo1.0\\Bingo\\FrmMain.cs [Design]",
               "RelativeToolTip": "Bingo\\FrmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-24T22:26:04.642Z",

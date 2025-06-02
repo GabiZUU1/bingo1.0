@@ -9,3 +9,13 @@ C:\Users\Gabi\Desktop\c#\Bingo1.0\Bingo\obj\Debug\Bingo.csproj.CoreCompileInputs
 C:\Users\Gabi\Desktop\c#\Bingo1.0\Bingo\obj\Debug\Bingo.exe
 C:\Users\Gabi\Desktop\c#\Bingo1.0\Bingo\obj\Debug\Bingo.pdb
 C:\Users\Gabi\Desktop\c#\Bingo1.0\Bingo\obj\Debug\Bingo.exe.config
+C:\Users\Gabi\Desktop\c#\bingo1.0\bingo1.0\Bingo\bin\Debug\Bingo.exe.config
+C:\Users\Gabi\Desktop\c#\bingo1.0\bingo1.0\Bingo\bin\Debug\Bingo.exe
+C:\Users\Gabi\Desktop\c#\bingo1.0\bingo1.0\Bingo\bin\Debug\Bingo.pdb
+C:\Users\Gabi\Desktop\c#\bingo1.0\bingo1.0\Bingo\obj\Debug\Bingo.csproj.AssemblyReference.cache
+C:\Users\Gabi\Desktop\c#\bingo1.0\bingo1.0\Bingo\obj\Debug\Bingo.FrmMain.resources
+C:\Users\Gabi\Desktop\c#\bingo1.0\bingo1.0\Bingo\obj\Debug\Bingo.Properties.Resources.resources
+C:\Users\Gabi\Desktop\c#\bingo1.0\bingo1.0\Bingo\obj\Debug\Bingo.csproj.GenerateResource.cache
+C:\Users\Gabi\Desktop\c#\bingo1.0\bingo1.0\Bingo\obj\Debug\Bingo.csproj.CoreCompileInputs.cache
+C:\Users\Gabi\Desktop\c#\bingo1.0\bingo1.0\Bingo\obj\Debug\Bingo.exe
+C:\Users\Gabi\Desktop\c#\bingo1.0\bingo1.0\Bingo\obj\Debug\Bingo.pdb

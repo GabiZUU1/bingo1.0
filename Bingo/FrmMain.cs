@@ -16,6 +16,8 @@ namespace Bingo
         public FrmMain()
         {
             InitializeComponent();
+
+            this.Controls.Add(new AmericanCard());
         }
     }
 }
