@@ -5,37 +5,44 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Windows.Markup;
 
 namespace Bingo
 {
     public class Cell : Panel
     {
+        public bool Checked = false;
         protected Label lblText { get; set; } = null;
-        private object _content;
+        private object _content = null;
         public object Content
         {
             get => _content;
             set
             {
-                _content = value;
-                if(lblText != null)
+                //if (value.GetType() != typeof(string))
+                //{
+                //    MessageBox.Show("jdfsiujd");
+                //}
+                if (value is int) _content = value;
+                else if (value is string && value == "free") _content = "FREE";
+                if (lblText != null)
                 {
-                    lblText.Text = value as string;
+                    lblText.Text = value.ToString();
                 }
             }
         }
     }
 
-    public class AmericanCell : Cell
+    public class NumericalCell : Cell
     {
-        public AmericanCell(Control parent)
+        public NumericalCell(Control parent)
         {
             this.Parent = parent;
 
             InitializeComponent();
         }
 
-        public AmericanCell(Control parent, string Content)
+        public NumericalCell(Control parent, int Content)
         {
             this.Parent = parent;
             this.Content = Content;
@@ -48,6 +55,9 @@ namespace Bingo
             this.Size = new Size(this.Parent.Width / 5, this.Parent.Height / 5);
             this.BorderStyle = BorderStyle.FixedSingle;
             this.BackColor = Color.Beige;
+
+            //this.Click += NumericalCell_Click;
+            
 
             lblText = new Label();
             this.Controls.Add(lblText);
