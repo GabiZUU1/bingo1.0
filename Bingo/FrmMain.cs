@@ -36,8 +36,14 @@ namespace Bingo
             nrales.Text = nr.ToString();
         }
 
+        public void Setprogress()
+        {
+            prg1.PerformStep();
+        }
+
         private void nrales_Click(object sender, EventArgs e)
         {
+            nrales.BackColor = Color.LightGreen;
             g.Start();
         }
     }
