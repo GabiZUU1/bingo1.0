@@ -13,9 +13,9 @@ namespace Bingo
 {
     public class Card : Panel
     {
-        public Panel pnlTitle = new Panel();
-        public Panel pnlCells = new Panel();
-
+        public Game GameHost { get; set; }
+        public Panel pnlTitle { get; set; } = new Panel();
+        public Panel pnlCells { get; set; } = new Panel();
 
         public Card()
         {
@@ -51,8 +51,10 @@ namespace Bingo
         private List<int> GeneratedNumbers { get; set; } = new List<int>();
         NumericalCell[,] Cells { get; set; } = null;
 
-        public AmericanCard()
+        public AmericanCard(Game host)
         {
+            GameHost = host;
+
             InitializeComponent();
         }
 
@@ -124,7 +126,24 @@ namespace Bingo
 
         private void NumericalCell_Click(object sender, EventArgs e)
         {
+            if (GameHost == null) return;
 
+            NumericalCell c = sender as NumericalCell;
+            if(c.Content is int && Convert.ToInt32(c.Content) == GameHost.GeneratedNumber)
+            {
+                GameHost.PlayerScore += 2;
+                c.BackColor = Color.OrangeRed;
+                c.Checked = true;
+            }
+            else
+            {
+                if(c.Content is int && GameHost.GeneratedNumbers.Contains(Convert.ToInt32(c.Content)))
+                {
+                    GameHost.PlayerScore++;
+                    c.BackColor = Color.ForestGreen;
+                    c.Checked = true;
+                }
+            }
         }
     }
 }

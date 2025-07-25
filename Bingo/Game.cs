@@ -12,7 +12,8 @@ namespace Bingo
     {
         private IContainer components = new Container();
         private Random rnd = new Random();
-        private int GeneratedNumber;
+        public int PlayerScore { get; set; }
+        public int GeneratedNumber { get; set; }
         public List<int> GeneratedNumbers { get; set; } = new List<int>();
         public Control Parent { get; set; }
         public Timer NumberGeneratorTimer { get;set; }
@@ -24,29 +25,38 @@ namespace Bingo
 
             NumberGeneratorTimer = new Timer(components);
             NumberGeneratorPauseTimer = new Timer(components);
+
             NumberGeneratorTimer.Interval = 4000;
             NumberGeneratorPauseTimer.Interval = 1;
+
+            int timp = 0;
             NumberGeneratorTimer.Tick += (se, ar) =>
             {
+                NumberGeneratorPauseTimer?.Stop();
+                timp = 0;
+
                 do
                 {
                     GeneratedNumber = rnd.Next(1, 76);
                 } while (GeneratedNumbers.Contains(GeneratedNumber));
                 GeneratedNumbers.Add(GeneratedNumber);
                 (Parent as FrmMain).Setnr(GeneratedNumber);
+
+                NumberGeneratorPauseTimer.Start();
+                (Parent as FrmMain).Resetprogress();
             };
 
-            double timp = 0;
             NumberGeneratorPauseTimer.Tick += (se, ar) =>
             {
-                timp++;
-                if (timp % 40 == 0)
+                timp += 10;
+                if (timp % 10 == 0)
                 {
                     (Parent as FrmMain).Setprogress();
                 }
-                if (timp == 4000)
+                if (timp == 8000)
                 {
                     timp = 0;
+                    NumberGeneratorPauseTimer.Stop();
                 }  
             };
         }
@@ -54,6 +64,7 @@ namespace Bingo
         public void Start()
         {
             NumberGeneratorTimer.Start();
+            NumberGeneratorPauseTimer.Start();
         }
     }
 }

@@ -56,9 +56,6 @@ namespace Bingo
             this.BorderStyle = BorderStyle.FixedSingle;
             this.BackColor = Color.Beige;
 
-            //this.Click += NumericalCell_Click;
-            
-
             lblText = new Label();
             this.Controls.Add(lblText);
             lblText.Dock = DockStyle.Fill;
@@ -67,6 +64,7 @@ namespace Bingo
             lblText.TextAlign = ContentAlignment.MiddleCenter;
             lblText.AutoSize = false;
             //lblText.Location = new Point(0, 0);
+            //////////////////////lblText.Click += this.Parent.Click;
         }
     }
 }

@@ -21,14 +21,14 @@ namespace Bingo
 
             this.Click += (se, ar) => { };
 
-            AmericanCard c1 = new AmericanCard();
-            AmericanCard c2 = new AmericanCard();
+            g = new Game(this);
+
+            AmericanCard c1 = new AmericanCard(g);
+            AmericanCard c2 = new AmericanCard(g);
             c2.Location = new Point(c1.Location.X + c1.Width + 10, c1.Location.Y);
             c1.BackColor = c2.BackColor = Color.LightCyan;
             this.Controls.Add(c1);
             this.Controls.Add(c2);
-
-            g = new Game(this);
         }
 
         public void Setnr(int nr)
@@ -39,6 +39,16 @@ namespace Bingo
         public void Setprogress()
         {
             prg1.PerformStep();
+        }
+
+        public void Resetprogress()
+        {
+            prg1.Value = 0;
+        }
+
+        public void SetText(string txt)
+        {
+            label1.Text = txt;
         }
 
         private void nrales_Click(object sender, EventArgs e)

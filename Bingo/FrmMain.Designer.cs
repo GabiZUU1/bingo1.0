@@ -62,8 +62,11 @@
             // 
             this.prg1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.prg1.Location = new System.Drawing.Point(0, 528);
+            this.prg1.Maximum = 200;
             this.prg1.Name = "prg1";
             this.prg1.Size = new System.Drawing.Size(1040, 34);
+            this.prg1.Step = 1;
+            this.prg1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.prg1.TabIndex = 2;
             // 
             // FrmMain
