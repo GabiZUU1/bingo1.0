@@ -25,10 +25,17 @@ namespace Bingo
 
             AmericanCard c1 = new AmericanCard(g);
             AmericanCard c2 = new AmericanCard(g);
+            AmericanCard c3 = new AmericanCard(g);
+            AmericanCard c4 = new AmericanCard(g);
+            c1.Location = new Point(0, lblScore.Height + nrales.Height + 5);
             c2.Location = new Point(c1.Location.X + c1.Width + 10, c1.Location.Y);
-            c1.BackColor = c2.BackColor = Color.LightCyan;
+            c3.Location = new Point(c2.Location.X + c2.Width + 10, c2.Location.Y);
+            c4.Location = new Point(c3.Location.X + c3.Width + 10, c3.Location.Y);
+            c1.BackColor = c2.BackColor = c3.BackColor = c4.BackColor = Color.LightCyan;
             this.Controls.Add(c1);
             this.Controls.Add(c2);
+            this.Controls.Add(c3);
+            this.Controls.Add(c4);
         }
 
         public void Setnr(int nr)
@@ -48,7 +55,7 @@ namespace Bingo
 
         public void SetText(string txt)
         {
-            label1.Text = txt;
+            lblScore.Text = "Your score: " + txt;
         }
 
         private void nrales_Click(object sender, EventArgs e)

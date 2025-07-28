@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -26,7 +27,7 @@ namespace Bingo
             NumberGeneratorTimer = new Timer(components);
             NumberGeneratorPauseTimer = new Timer(components);
 
-            NumberGeneratorTimer.Interval = 4000;
+            NumberGeneratorTimer.Interval = 5000;
             NumberGeneratorPauseTimer.Interval = 1;
 
             int timp = 0;
@@ -53,7 +54,7 @@ namespace Bingo
                 {
                     (Parent as FrmMain).Setprogress();
                 }
-                if (timp == 8000)
+                if (timp == 10000)
                 {
                     timp = 0;
                     NumberGeneratorPauseTimer.Stop();
@@ -65,6 +66,27 @@ namespace Bingo
         {
             NumberGeneratorTimer.Start();
             NumberGeneratorPauseTimer.Start();
+        }
+
+        public void UpdateScore(object sender, int amount = 2)
+        {
+            NumericalCell c = sender as NumericalCell;
+            switch(amount)
+            {
+                case 2:
+                    c.BackColor = Color.ForestGreen;
+                    c.Checked = true;
+                    break;
+                case 1:
+                    c.BackColor = Color.OrangeRed;
+                    c.Checked = true;
+                    break;
+                default:
+                    new Exception("Amount not supported.");
+                    break;
+            }
+            PlayerScore += amount;
+            (Parent as FrmMain).SetText(PlayerScore.ToString());
         }
     }
 }

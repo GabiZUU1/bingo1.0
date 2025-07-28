@@ -47,7 +47,7 @@ namespace Bingo
 
     public class AmericanCard : Card
     {
-        private Random rnd = new Random();
+        private static Random rnd { get; set; } = new Random();
         private List<int> GeneratedNumbers { get; set; } = new List<int>();
         NumericalCell[,] Cells { get; set; } = null;
 
@@ -59,7 +59,7 @@ namespace Bingo
         }
 
         private void InitializeComponent()
-        {
+        {;
             Cells = new NumericalCell[5, 5];
             for (int i = 0; i < 5; i++)
             {
@@ -124,24 +124,27 @@ namespace Bingo
             }
         }
 
+
         private void NumericalCell_Click(object sender, EventArgs e)
         {
             if (GameHost == null) return;
 
             NumericalCell c = sender as NumericalCell;
+
+            if(c.Content is string && c.Content.ToString().ToLower() == "free")
+            {
+                GameHost.UpdateScore(c, 2);
+            }
+
             if(c.Content is int && Convert.ToInt32(c.Content) == GameHost.GeneratedNumber)
             {
-                GameHost.PlayerScore += 2;
-                c.BackColor = Color.OrangeRed;
-                c.Checked = true;
+                GameHost.UpdateScore(c, 2);
             }
             else
             {
                 if(c.Content is int && GameHost.GeneratedNumbers.Contains(Convert.ToInt32(c.Content)))
                 {
-                    GameHost.PlayerScore++;
-                    c.BackColor = Color.ForestGreen;
-                    c.Checked = true;
+                    GameHost.UpdateScore(c, 1);
                 }
             }
         }

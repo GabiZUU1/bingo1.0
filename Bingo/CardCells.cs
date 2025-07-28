@@ -63,8 +63,11 @@ namespace Bingo
             lblText.Text = this.Content as string;
             lblText.TextAlign = ContentAlignment.MiddleCenter;
             lblText.AutoSize = false;
-            //lblText.Location = new Point(0, 0);
-            //////////////////////lblText.Click += this.Parent.Click;
-        }
+
+            lblText.Click += (se, ar) =>
+            {
+                this.OnClick(new EventArgs());
+            };
+        }    
     }
 }
